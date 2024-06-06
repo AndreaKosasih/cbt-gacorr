@@ -28,7 +28,7 @@
                                     <td>{{ exam_group.exam.title }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="fw-bold">Mata Pelajaran</td>
+                                    <td class="fw-bold">Mata Kuliah</td>
                                     <td>{{ exam_group.exam.lesson.title }}</td>
                                 </tr>
                                 <tr>

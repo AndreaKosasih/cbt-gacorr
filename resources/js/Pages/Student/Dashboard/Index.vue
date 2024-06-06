@@ -19,7 +19,7 @@
                         <table class="table table-centered table-nowrap mb-0 rounded">
                             <thead>
                                 <tr>
-                                    <td class="fw-bold">Mata Pelajaran</td>
+                                    <td class="fw-bold">Mata Kuliah</td>
                                     <td>{{ data.exam_group.exam.lesson.title }}</td>
                                 </tr>
                                 <tr>

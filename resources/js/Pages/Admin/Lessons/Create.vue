@@ -1,6 +1,6 @@
 <template>
     <Head>
-        <title>Tambah Mata Pelajaran - Aplikasi Ujian Online</title>
+        <title>Tambah Mata Kuliah - Aplikasi Ujian Online</title>
     </Head>
     <div class="container-fluid mb-5 mt-5">
         <div class="row">
