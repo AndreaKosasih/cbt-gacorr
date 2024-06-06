@@ -15,10 +15,10 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="mb-4">
-                                        <label>Nisn</label> 
-                                        <input type="text" class="form-control" placeholder="Masukkan Nisn Siswa" v-model="form.nisn">
-                                        <div v-if="errors.nisn" class="alert alert-danger mt-2">
-                                            {{ errors.nisn }}
+                                        <label>Npm</label> 
+                                        <input type="text" class="form-control" placeholder="Masukkan Npm Siswa" v-model="form.npm">
+                                        <div v-if="errors.npm" class="alert alert-danger mt-2">
+                                            {{ errors.npm }}
                                         </div>
                                     </div>
                                 </div>
@@ -129,7 +129,7 @@
 
             //define form with reactive
             const form = reactive({
-                nisn: '',
+                npm: '',
                 name: '',
                 classroom_id: '',
                 gender: '',
@@ -143,7 +143,7 @@
                 //send data to server
                 Inertia.post('/admin/students', {
                     //data
-                    nisn: form.nisn,
+                    npm: form.npm,
                     name: form.name,
                     classroom_id: form.classroom_id,
                     gender: form.gender,

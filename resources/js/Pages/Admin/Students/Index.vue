@@ -43,7 +43,7 @@
                                 <thead class="thead-dark">
                                     <tr class="border-0">
                                         <th class="border-0 rounded-start" style="width:5%">No.</th>
-                                        <th class="border-0">Nisn</th>
+                                        <th class="border-0">Npm</th>
                                         <th class="border-0">Nama</th>
                                         <th class="border-0">Kelas</th>
                                         <th class="border-0">Jenis Kelamin</th>
@@ -56,7 +56,7 @@
                                     <tr v-for="(student, index) in students.data" :key="index">
                                         <td class="fw-bold text-center">
                                             {{ ++index + (students.current_page - 1) * students.per_page }}</td>
-                                        <td>{{ student.nisn }}</td>
+                                        <td>{{ student.npm }}</td>
                                         <td>{{ student.name }}</td>
                                         <td class="text-center">{{ student.classroom.title }}</td>
                                         <td class="text-center">{{ student.gender }}</td>

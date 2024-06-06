@@ -12,8 +12,8 @@
                         <table class="table table-centered table-nowrap mb-0 rounded">
                             <thead>
                                 <tr>
-                                    <td class="fw-bold">Nisn</td>
-                                    <td>{{ exam_group.student.nisn }}</td>
+                                    <td class="fw-bold">Npm</td>
+                                    <td>{{ exam_group.student.npm }}</td>
                                 </tr>
                                 <tr>
                                     <td class="fw-bold">Nama Lengkap</td>

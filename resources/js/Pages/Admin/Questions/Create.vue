@@ -19,7 +19,7 @@
                                             <td style="width:20%" class="fw-bold">Soal</td>
                                             <td>
                                                 <Editor 
-                                                    api-key="no-api-key" 
+                                                    api-key="nv780csze8e75an64prrglfrxxheiqxvqdm4q89i2ys8eegy" 
                                                     v-model="form.question" 
                                                     :init="{
                                                         menubar: false,
@@ -33,7 +33,7 @@
                                             <td style="width:20%" class="fw-bold">Pilihan A</td>
                                             <td>
                                                 <Editor 
-                                                    api-key="no-api-key" 
+                                                    api-key="nv780csze8e75an64prrglfrxxheiqxvqdm4q89i2ys8eegy" 
                                                     v-model="form.option_1" 
                                                     :init="{
                                                         height: 130,
@@ -48,7 +48,7 @@
                                             <td style="width:20%" class="fw-bold">Pilihan B</td>
                                             <td>
                                                 <Editor 
-                                                    api-key="no-api-key" 
+                                                    api-key="nv780csze8e75an64prrglfrxxheiqxvqdm4q89i2ys8eegy" 
                                                     v-model="form.option_2" 
                                                     :init="{
                                                         height: 130,
@@ -63,7 +63,7 @@
                                             <td style="width:20%" class="fw-bold">Pilihan C</td>
                                             <td>
                                                 <Editor 
-                                                    api-key="no-api-key" 
+                                                    api-key="nv780csze8e75an64prrglfrxxheiqxvqdm4q89i2ys8eegy" 
                                                     v-model="form.option_3" 
                                                     :init="{
                                                         height: 130,
@@ -78,7 +78,7 @@
                                             <td style="width:20%" class="fw-bold">Pilihan D</td>
                                             <td>
                                                 <Editor 
-                                                    api-key="no-api-key" 
+                                                    api-key="nv780csze8e75an64prrglfrxxheiqxvqdm4q89i2ys8eegy" 
                                                     v-model="form.option_4" 
                                                     :init="{
                                                         height: 130,
@@ -93,7 +93,7 @@
                                             <td style="width:20%" class="fw-bold">Pilihan E</td>
                                             <td>
                                                 <Editor 
-                                                    api-key="no-api-key" 
+                                                    api-key="nv780csze8e75an64prrglfrxxheiqxvqdm4q89i2ys8eegy" 
                                                     v-model="form.option_5" 
                                                     :init="{
                                                         height: 130,

@@ -18,18 +18,18 @@ class LoginController extends Controller
     {
         //validate the form data
         $this->validate($request, [
-            'nisn'      => 'required',
+            'npm'      => 'required',
             'password'  => 'required',
         ]);
 
-        //cek nisn dan password
+        //cek npm dan password
         $student = Student::where([
-            'nisn'      => $request->nisn,
+            'npm'      => $request->npm,
             'password'  => $request->password
         ])->first();
 
         if(!$student) {
-            return redirect()->back()->with('error', 'NISN atau Password salah');
+            return redirect()->back()->with('error', 'NPM atau Password salah');
         }
         
         //login the user

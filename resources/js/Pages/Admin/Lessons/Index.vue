@@ -35,7 +35,7 @@
                                 <thead class="thead-dark">
                                     <tr class="border-0">
                                         <th class="border-0 rounded-start" style="width:5%">No.</th>
-                                        <th class="border-0">Nama Mata Pelajaran</th>
+                                        <th class="border-0">Nama Mata Kuliah</th>
                                         <th class="border-0 rounded-end" style="width:15%">Aksi</th>
                                     </tr>
                                 </thead>
@@ -133,7 +133,7 @@
 
                         Swal.fire({
                             title: 'Deleted!',
-                            text: 'Pelajaran Berhasil Dihapus!.',
+                            text: 'Matkul Berhasil Dihapus!.',
                             icon: 'success',
                             timer: 2000,
                             showConfirmButton: false,

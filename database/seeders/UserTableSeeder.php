@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\User;
 use Illuminate\Database\Seeder;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Support\Facades\Hash;
 
 class UserTableSeeder extends Seeder
 {
@@ -15,11 +15,22 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-        //create user
-        User::create([
-            'name'      => 'Administrator',
-            'email'     => 'admin@gmail.com',
-            'password'  => bcrypt('password'),
-        ]);
+        try {
+            // Menggunakan fungsi date() PHP
+            $now = date('Y-m-d H:i:s');
+
+            // Create user
+            User::create([
+                'name'      => 'Administrator',
+                'email'     => 'admin@gmail.com',
+                'password'  => Hash::make('password'),
+                'created_at' => $now,
+                'updated_at' => $now,
+            ]);
+
+            echo "Seeding berhasil\n";
+        } catch (\Exception $e) {
+            echo "Error: " . $e->getMessage() . "\n";
+        }
     }
 }

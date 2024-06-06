@@ -14,15 +14,15 @@
                 <form @submit.prevent="submit" class="mt-4">
 
                     <div class="form-group mb-4">
-                        <label for="email">Nisn</label>
+                        <label for="email">Npm</label>
                         <div class="input-group">
                             <span class="input-group-text" id="basic-addon1">
                                 <i class="fa fa-key"></i>
                             </span>
-                            <input type="number" class="form-control" v-model="form.nisn" placeholder="Nisn">
+                            <input type="number" class="form-control" v-model="form.npm" placeholder="Npm">
                         </div>
-                        <div v-if="errors.nisn" class="alert alert-danger mt-2">
-                            {{ errors.nisn }}
+                        <div v-if="errors.npm" class="alert alert-danger mt-2">
+                            {{ errors.npm }}
                         </div>
                     </div>
 
@@ -100,7 +100,7 @@
 
             //define form state
             const form = reactive({
-                nisn: '',
+                npm: '',
                 password: '',
             });
 
@@ -111,7 +111,7 @@
                 Inertia.post('/students/login', {
 
                     //data
-                    nisn: form.nisn,
+                    npm: form.npm,
                     password: form.password,
                 });
             }

@@ -59,7 +59,7 @@ class StudentController extends Controller
         //validate request
         $request->validate([
             'name'          => 'required|string|max:255',
-            'nisn'          => 'required|unique:students',
+            'npm'          => 'required|unique:students',
             'gender'        => 'required|string',
             'password'      => 'required|confirmed',
             'classroom_id'  => 'required'
@@ -68,7 +68,7 @@ class StudentController extends Controller
         //create student
         Student::create([
             'name'          => $request->name,
-            'nisn'          => $request->nisn,
+            'npm'          => $request->npm,
             'gender'        => $request->gender,
             'password'      => $request->password,
             'classroom_id'  => $request->classroom_id
@@ -111,7 +111,7 @@ class StudentController extends Controller
         //validate request
         $request->validate([
             'name'          => 'required|string|max:255',
-            'nisn'          => 'required|unique:students,nisn,'.$student->id,
+            'npm'          => 'required|unique:students,npm,'.$student->id,
             'gender'        => 'required|string',
             'classroom_id'  => 'required',
             'password'      => 'confirmed'
@@ -123,7 +123,7 @@ class StudentController extends Controller
             //update student without password
             $student->update([
                 'name'          => $request->name,
-                'nisn'          => $request->nisn,
+                'npm'          => $request->npm,
                 'gender'        => $request->gender,
                 'classroom_id'  => $request->classroom_id
             ]);
@@ -133,7 +133,7 @@ class StudentController extends Controller
             //update student with password
             $student->update([
                 'name'          => $request->name,
-                'nisn'          => $request->nisn,
+                'npm'          => $request->npm,
                 'gender'        => $request->gender,
                 'password'      => $request->password,
                 'classroom_id'  => $request->classroom_id
